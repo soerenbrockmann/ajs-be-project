@@ -1,0 +1,22 @@
+{
+  "name": "Lecture1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel --watch src -d lib",
+    "start": "concurrently \"npm run build\" \"nodemon lib/index.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-transform-runtime": "^7.7.4",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/runtime": "^7.7.4",
+    "concurrently": "^5.0.0",
+    "nodemon": "^1.19.4"
+  }
+}
